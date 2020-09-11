@@ -1,0 +1,14 @@
+<div class="chart-container" *ngIf="isDataLoaded">
+  <div>
+    <p>Number of flights by days of week:</p>
+  </div>
+  <canvas
+    baseChart
+    chartType="doughnut"
+    [data]="doughnutChartData"
+    [colors]="doughnutChartColors"
+    [labels]="doughnutChartLabels"
+    [options]="doughnutChartOptions"
+    (chartClick)="chartClicked($event)">
+  </canvas>
+</div>

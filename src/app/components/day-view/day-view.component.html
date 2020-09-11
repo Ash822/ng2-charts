@@ -1,0 +1,16 @@
+<div class="border border-secondary chart-container" *ngIf="isDataLoaded">
+  <div class="title-bar row">
+    <p class="col">{{day}}</p>
+    <button type="button" class="btn btn-primary col-md-auto" (click)="gotoDOW()">Back</button>
+  </div>
+  <div class="row" >
+    <canvas
+      baseChart
+      [data]="barChartData"
+      [colors]="barChartColor"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      chartType="bar">
+    </canvas>
+  </div>
+</div>

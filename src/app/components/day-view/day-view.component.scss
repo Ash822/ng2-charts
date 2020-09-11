@@ -1,0 +1,8 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  .title-bar {
+    flex-direction: row;
+  }
+}
